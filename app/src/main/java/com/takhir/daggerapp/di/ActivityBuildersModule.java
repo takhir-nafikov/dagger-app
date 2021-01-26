@@ -1,5 +1,6 @@
 package com.takhir.daggerapp.di;
 
+import com.takhir.daggerapp.di.auth.AuthModule;
 import com.takhir.daggerapp.di.auth.AuthViewModelModule;
 import com.takhir.daggerapp.ui.auth.AuthActivity;
 
@@ -11,7 +12,7 @@ import dagger.android.ContributesAndroidInjector;
 public abstract class ActivityBuildersModule {
 
     @ContributesAndroidInjector(
-            modules = {AuthViewModelModule.class}
+            modules = {AuthViewModelModule.class, AuthModule.class}
     )
     abstract AuthActivity contributeAuthActivity();
 }
