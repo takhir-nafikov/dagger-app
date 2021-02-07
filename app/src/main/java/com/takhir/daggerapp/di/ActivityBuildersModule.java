@@ -2,6 +2,8 @@ package com.takhir.daggerapp.di;
 
 import com.takhir.daggerapp.di.auth.AuthModule;
 import com.takhir.daggerapp.di.auth.AuthViewModelModule;
+import com.takhir.daggerapp.di.main.MainFragmentBuildersModule;
+import com.takhir.daggerapp.di.main.MainViewModelsModule;
 import com.takhir.daggerapp.ui.auth.AuthActivity;
 import com.takhir.daggerapp.ui.main.MainActivity;
 
@@ -17,6 +19,8 @@ public abstract class ActivityBuildersModule {
     )
     abstract AuthActivity contributeAuthActivity();
 
-    @ContributesAndroidInjector
+    @ContributesAndroidInjector(
+            modules = {MainFragmentBuildersModule.class, MainViewModelsModule.class}
+    )
     abstract MainActivity contributeMainActivity();
 }
