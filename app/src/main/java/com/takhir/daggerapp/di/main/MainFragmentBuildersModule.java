@@ -1,5 +1,6 @@
 package com.takhir.daggerapp.di.main;
 
+import com.takhir.daggerapp.ui.main.posts.PostsFragments;
 import com.takhir.daggerapp.ui.main.profile.ProfileFragment;
 
 import dagger.Module;
@@ -10,4 +11,7 @@ public abstract class MainFragmentBuildersModule {
 
     @ContributesAndroidInjector
     abstract ProfileFragment contributeProfileFragment();
+
+    @ContributesAndroidInjector
+    abstract PostsFragments contributePostsFragments();
 }

@@ -11,6 +11,7 @@ import androidx.annotation.Nullable;
 
 import com.takhir.daggerapp.BaseActivity;
 import com.takhir.daggerapp.R;
+import com.takhir.daggerapp.ui.main.posts.PostsFragments;
 import com.takhir.daggerapp.ui.main.profile.ProfileFragment;
 
 public class MainActivity extends BaseActivity {
@@ -27,7 +28,7 @@ public class MainActivity extends BaseActivity {
 
     private void testFragment() {
         getSupportFragmentManager().beginTransaction()
-                .replace(R.id.main_container, new ProfileFragment())
+                .replace(R.id.main_container, new PostsFragments())
                 .commit();
     }
 
