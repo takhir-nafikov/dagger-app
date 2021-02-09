@@ -3,7 +3,6 @@
 <p>Contains Dagger2 examples with Retrofit2, MVVM architecture, Android Jetpack's Navigation component</p>
 
 <ul>
-<li><strong>Every line of code is written and explained on video</strong></li>
 <li>Dagger version 2.2+ (Focus on Dagger-Android)</li>
 <li>@Provides, @Binds, @BindsInstance explanation</li>
 <li>Map Multibinding</li>
